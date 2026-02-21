@@ -9,18 +9,12 @@ dotenv.config()
 
 const app = express()
 
-
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "https://task-management-system-nu-five.vercel.app/"
-    ],
-    credentials: true
-  })
-)
-
-app.options("*", cors())
+app.use(cors({ 
+  origin:[ 
+    "http://localhost:3000" , 
+    "https://task-management-system-git-main-the-paranoid07s-projects.vercel.app/"
+  ], 
+  credentials: true }))
 
 
 app.use(express.json())
