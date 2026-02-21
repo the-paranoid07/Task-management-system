@@ -12,9 +12,11 @@ const app = express()
 app.use(cors({ 
   origin:[ 
     "http://localhost:3000" , 
-    "https://your-frontend-name.vercel.app"
+    "task-management-system-nu-five.vercel.app"
   ], 
   credentials: true }))
+
+
 app.use(express.json())
 app.use(cookieParser())
 
